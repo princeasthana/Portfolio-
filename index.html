@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prince Asthana | Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #4f46e5, #a855f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .card {
+      background: white;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      border-radius: 1rem;
+      padding: 2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      color: #6b7280;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+  
+  <header class="bg-white shadow-md sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold gradient-text">Prince Asthana</h1>
+      <button id="menu-toggle" class="md:hidden text-2xl">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav id="menu" class="hidden md:flex md:space-x-6 text-sm font-medium flex-col md:flex-row absolute md:static bg-white left-0 top-full w-full md:w-auto shadow-md md:shadow-none">
+        <a href="#about" class="block py-2 px-6 hover:text-indigo-500">About</a>
+        <a href="#skills" class="block py-2 px-6 hover:text-indigo-500">Skills</a>
+        <a href="#experience" class="block py-2 px-6 hover:text-indigo-500">Experience</a>
+        <a href="#projects" class="block py-2 px-6 hover:text-indigo-500">Projects</a>
+        <a href="#education" class="block py-2 px-6 hover:text-indigo-500">Education</a>
+        <a href="#contact" class="block py-2 px-6 hover:text-indigo-500">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  
+  <script>
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("menu");
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+
+  
+
+  <section class="bg-gray-100 py-20 px-6 text-center">
+    <div class="container mx-auto">
+      <img src="prince.jpg" alt="Prince Asthana" class="w-32 h-32 rounded-full mx-auto shadow-lg mb-6">
+      <h1 class="text-4xl font-bold gradient-text">Hi, I'm Prince Asthana</h1>
+      <p class="mt-4 text-lg text-gray-700 max-w-xl mx-auto">
+        A passionate and imaginative IT student. I’m deeply interested in creative thinking, problem-solving, and building unique digital experiences. My curiosity for innovation drives me to constantly learn, experiment, and bring fresh ideas into every project I work on, especially in web development and design.
+      </p>
+    </div>
+  </section>
+
+
+<section id="about" class="bg-white py-16">
+  <div class="container mx-auto px-6">
+    <h2 class="section-title text-center">About <span class="gradient-text">Me</span></h2>
+    <div class="grid md:grid-cols-2 gap-8 items-center mt-10">
+      <div class="space-y-5">
+        <p class="text-lg text-gray-700">🎓 I'm an <strong>IT undergraduate</strong> at Bansal Institute of Engineering & Technology, Lucknow (2023–Present).</p>
+        <p class="text-lg text-gray-700">🔍 I’m passionate about <strong>exploring emerging technologies</strong> and turning <strong>creative ideas into real-world solutions</strong>.</p>
+        <p class="text-lg text-gray-700">🚀 Driven by <strong>curiosity and innovation</strong>, I enjoy building modern, scalable, and impactful web experiences.</p>
+        <p class="text-lg text-gray-700">🤝 I'm always eager to learn, collaborate, and take on exciting challenges that inspire growth and originality.</p>
+
+        
+        <div class="pt-4 space-y-2">
+          <p class="text-lg text-gray-700 pt-2">
+            🔗 Feel free to connect with me on <strong>Instagram</strong> or drop a message on <strong>WhatsApp</strong> — I’d love to hear from you!
+          </p>
+          <p class="text-lg text-gray-700">
+            <i class="fab fa-instagram text-pink-500 mr-2"></i>
+            <strong>Instagram:</strong> 
+            <a href="https://instagram.com/princeasthana_007" class="text-blue-600 hover:underline" target="_blank">@princeasthana_007</a>
+          </p>
+          <p class="text-lg text-gray-700">
+            <i class="fab fa-whatsapp text-green-500 mr-2"></i>
+            <strong>WhatsApp:</strong> 
+            <a href="https://wa.me/919473824566" class="text-green-600 hover:underline" target="_blank">+91 9473824566</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <img src="princeasthana.jpg" alt="Prince Asthana" class="w-64 h-64 object-cover rounded-2xl shadow-xl">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <section id="skills" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Technical <span class="gradient-text">Skills</span></h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+          <h4 class="text-lg font-semibold mb-2 text-indigo-600">Programming Languages</h4>
+          <ul class="list-disc list-inside text-gray-700 text-sm">
+            <li>C</li>
+            <li>Python</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+          <h4 class="text-lg font-semibold mb-2 text-indigo-600">Core CS Concepts</h4>
+          <ul class="list-disc list-inside text-gray-700 text-sm">
+            <li>Data Structures & Algorithms</li>
+            <li>Operating Systems (Basics)</li>
+            <li>Object-Oriented Programming</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+          <h4 class="text-lg font-semibold mb-2 text-indigo-600">Tools & Platforms</h4>
+          <ul class="list-disc list-inside text-gray-700 text-sm">
+            <li>Notepad</li>
+            <li>GitHub</li>
+            <li>VS Code</li>
+          </ul>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition duration-300">
+          <h4 class="text-lg font-semibold mb-2 text-indigo-600">Soft Skills</h4>
+          <ul class="list-disc list-inside text-gray-700 text-sm">
+            <li>Problem Solving</li>
+            <li>Creativity</li>
+            <li>Team Collaboration</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="experience" class="bg-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Professional <span class="gradient-text">Experience</span></h2>
+      <div class="grid md:grid-cols-2 gap-8 mt-10">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">Coding Ninja (Code360)</h4>
+          <p class="text-gray-700">Secured 1st rank by completing daily coding tasks and solving structured challenges on the Coding Ninja Playground in November 2024, significantly enhancing my problem-solving skills and consistency.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <h4 class="text-xl font-semibold text-indigo-600 mb-2">VS Code Practice</h4>
+          <p class="text-gray-700">Practiced projects and hands-on coding regularly using Visual Studio Code to build real-world HTML/CSS/JS components and refine debugging skills.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="projects" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Featured <span class="gradient-text">Projects</span></h2>
+      <p class="text-center section-subtitle mb-12">A showcase of my technical projects demonstrating problem-solving skills and innovative solutions.</p>
+
+      <div class="relative">
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-indigo-500 to-purple-500"></div>
+        <div class="space-y-16 relative z-10">
+
+          
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-xl shadow-lg">
+              <p class="text-sm mb-2">📅 First JavaScript Practice</p>
+              <h3 class="text-xl font-bold">Registration Form</h3>
+              <p class="mt-2">Built a simple and functional registration form to understand form validations and DOM manipulation.</p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="card">
+                <h4 class="font-semibold mb-2">Technologies Used</h4>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">HTML</span>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">CSS</span>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          
+          <div class="flex flex-col md:flex-row items-center gap-6">
+            <div class="w-full md:w-1/2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white p-6 rounded-xl shadow-lg">
+              <p class="text-sm mb-2">📅 JavaScript Practice</p>
+              <h3 class="text-xl font-bold">Basic Calculator</h3>
+              <p class="mt-2">Created a basic calculator app using JavaScript that performs standard arithmetic operations.</p>
+            </div>
+            <div class="w-full md:w-1/2">
+              <div class="card">
+                <h4 class="font-semibold mb-2">Technologies Used</h4>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">HTML</span>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">CSS</span>
+                <span class="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="education" class="bg-white py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Education <span class="gradient-text">Journey</span></h2>
+      <div class="mt-10 space-y-6">
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold text-indigo-600">High School</h3>
+          <p class="text-gray-700">Completed in 2021 – Gained a solid foundation in Science and Mathematics, and also began developing basic innovative ideas through creative school projects and explorations.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold text-indigo-600">Intermediate</h3>
+          <p class="text-gray-700">Completed in 2023 – Focused on Physics, Chemistry, and Mathematics (PCM) subjects, and further strengthened my analytical thinking while exploring innovative approaches to problem-solving.</p>
+        </div>
+        <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-xl transition duration-300">
+          <h3 class="text-lg font-semibold text-indigo-600">B.Tech in Information Technology</h3>
+          <p class="text-gray-700">2023 – Present | Pursuing B.Tech in Information Technology at Bansal Institute of Engineering & Technology, Lucknow, where I'm actively developing innovative ideas, strengthening my technical foundation, engaging in real-world projects, and consistently maintaining an 8.6 SGPA as a 2nd-year student.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <section id="contact" class="bg-gray-100 py-16">
+    <div class="container mx-auto px-6">
+      <h2 class="section-title text-center">Contact <span class="gradient-text">Me</span></h2>
+      <div class="mt-10 max-w-xl mx-auto">
+        <form class="bg-white p-6 rounded-lg shadow-md space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-3 border rounded" required>
+          <input type="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+          <textarea placeholder="Your Message" class="w-full p-3 border rounded" rows="4" required></textarea>
+          <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-6 py-2 rounded-full hover:scale-105 transition">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer class="bg-gray-900 text-white py-6 mt-12">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
+      <div class="text-center md:text-left mb-4 md:mb-0">
+        <p class="text-sm">© 2025 Prince Asthana. All rights reserved.</p>
+        <p class="text-sm mt-1">📧 princeasthana0@gmail.com | 📞 +91 9473824566</p>
+      </div>
+      <div class="flex space-x-4 justify-center">
+        <a href="https://github.com/princeasthana" target="_blank" class="hover:text-indigo-400 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M12 0.297C5.373 0.297 0 5.67 0 12.297c0 5.29 3.438 9.776 8.207 11.387.6.113.82-.26.82-.577v-2.234c-3.338.726-4.033-1.61-4.033-1.61-.547-1.387-1.335-1.756-1.335-1.756-1.091-.746.083-.73.083-.73 1.205.084 1.84 1.237 1.84 1.237 1.07 1.835 2.809 1.305 3.495.997.107-.776.42-1.305.763-1.605-2.665-.304-5.467-1.333-5.467-5.931 0-1.311.469-2.382 1.236-3.221-.124-.303-.536-1.524.117-3.176 0 0 1.008-.323 3.301 1.23a11.52 11.52 0 0 1 3.003-.403 11.54 11.54 0 0 1 3.003.403c2.291-1.553 3.297-1.23 3.297-1.23.655 1.653.243 2.874.12 3.176.77.839 1.235 1.91 1.235 3.221 0 4.609-2.807 5.625-5.48 5.921.431.371.815 1.104.815 2.229v3.305c0 .32.216.694.825.576C20.565 22.07 24 17.586 24 12.297 24 5.67 18.627.297 12 .297z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/princeasthana007" target="_blank" class="hover:text-purple-400 transition">
+          <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
+            <path d="M22.23 0H1.77C.79 0 0 .774 0 1.728v20.543C0 23.228.79 24 1.77 24h20.46c.978 0 1.77-.772 1.77-1.728V1.728C24 .774 23.208 0 22.23 0zM7.125 20.452H3.56V9h3.565v11.452zM5.345 7.545a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124zM20.452 20.452h-3.562v-5.582c0-1.332-.027-3.044-1.857-3.044-1.86 0-2.145 1.45-2.145 2.947v5.68H9.326V9h3.421v1.561h.047c.476-.9 1.635-1.847 3.362-1.847 3.595 0 4.257 2.363 4.257 5.437v6.301z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
