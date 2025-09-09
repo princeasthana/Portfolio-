@@ -259,17 +259,18 @@
   <div class="container mx-auto px-6">
     <h2 class="section-title text-center">Contact <span class="gradient-text">Me</span></h2>
     <div class="mt-10 max-w-xl mx-auto">
-    
+  
     <form action="https://formsubmit.co/princeasthana0@gmail.com" 
-        method="POST" 
-        class="bg-white p-6 rounded-lg shadow-md space-y-4"
-        onsubmit="setTimeout(function(){ window.location.reload(); }, 500);">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
-        <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
-        <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded" rows="4" required></textarea>
-        <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-6 py-2 rounded-full hover:scale-105 transition">Send Message</button>
-      </form>
+         method="POST" 
+         class="bg-white p-6 rounded-lg shadow-md space-y-4"
+         onsubmit="setTimeout(function(){ window.location.reload(); }, 500);">
+         <input type="hidden" name="_captcha" value="false">
+         <input type="hidden" name="_next" value="https://your-site-name.netlify.app/">
+         <input type="text" name="name" placeholder="Your Name" class="w-full p-3 border rounded" required>
+         <input type="email" name="email" placeholder="Your Email" class="w-full p-3 border rounded" required>
+         <textarea name="message" placeholder="Your Message" class="w-full p-3 border rounded" rows="4" required></textarea>
+         <button type="submit" class="bg-gradient-to-r from-indigo-600 to-purple-500 text-white px-6 py-2 rounded-full hover:scale-105 transition">Send Message</button>
+    </form>
     </div>
   </div>
 </section>
@@ -294,5 +295,6 @@
       </div>
     </div>
   </footer>
+
 
 
